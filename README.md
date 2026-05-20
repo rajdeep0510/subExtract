@@ -1,11 +1,8 @@
 # subExtract
 
-[![Go Version](https://img.shields.io/github/go-mod/go-version/rajdeepvala/subextract)](https://go.dev/)
-[![License](https://img.shields.io/github/license/rajdeepvala/subextract)](LICENSE)
-
 `subExtract` is a high-performance CLI tool written in Go, designed to extract, normalize, and convert subtitles from video files. It leverages the power of FFmpeg for media handling and Tesseract OCR for processing image-based (PGS) subtitles, providing a seamless experience for managing your media library's subtitles.
 
-## 🚀 Features
+## Features
 
 - **Multi-Format Extraction**: Extract subtitles from `.mkv`, `.mp4`, `.avi`, and more.
 - **OCR Support**: Built-in support for image-based subtitles (HDMV PGS) using Tesseract OCR.
@@ -16,7 +13,7 @@
 - **Auto-conversion**: Converts specialized formats like MicroDVD (.sub), ASS/SSA, and VTT to standard SRT.
 - **MicroDVD FPS Detection**: Automatically attempts to detect the correct FPS for MicroDVD conversion from accompanying video files.
 
-## 📋 Prerequisites
+## Prerequisites
 
 `subExtract` relies on a few powerful system tools that must be installed and available in your `PATH`:
 
@@ -24,7 +21,7 @@
 2.  **Tesseract OCR**: Required for converting image-based subtitles (PGS) into text.
     *   *Note: Ensure you have the necessary language data files (e.g., `tessdata/eng.traineddata`) for the languages you wish to OCR.*
 
-## 📥 Installation
+## Installation
 
 ### From Source
 
@@ -40,7 +37,7 @@ cd subextract
 go build -o subextract main.go
 ```
 
-## 🛠 Usage
+## Usage
 
 ### Basic Usage
 
@@ -90,7 +87,7 @@ subextract subtitles.sub --fps 23.976
 | `--verbose` | `-v` | Enable verbose logging |
 | `--help` | `-h` | Show help for subextract |
 
-## 🏗 Project Structure
+## Project Structure
 
 - `cmd/`: CLI entry point and command definitions (Cobra).
 - `internal/`: Private library code.
@@ -102,7 +99,7 @@ subextract subtitles.sub --fps 23.976
     - `tui/`: Interactive terminal components (LipGloss/Huh).
 - `docs/`: Documentation and man pages.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -112,6 +109,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
